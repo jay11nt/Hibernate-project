@@ -26,9 +26,9 @@ public class FileUploadController
 		
 		
 		
-			//validation
-		try
-		{
+					//validation
+				try
+				{
 						if(file.isEmpty())
 							{
 								return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("no file conatins");
@@ -49,11 +49,11 @@ public class FileUploadController
 						{
 							return ResponseEntity.ok("File is uploaded successfully");
 						}
-		}
-		catch(Exception e)
-			{
-				e.printStackTrace();
-			}
+				}
+				catch(Exception e)
+					{
+					e.printStackTrace();
+					}
 		
 						return ResponseEntity.ok("working");
 	}
