@@ -57,7 +57,7 @@ public class BookService
 	//delete book
 	public void deleteBook(int bid)
 	{
-		//.stream().filter(book->book.getId()!=bid).collect(Collectors.toList());	//using lamba function
+		//.stream().filter(book->book.getId()!=bid).collect(Collectors.toList());	
 		bookRepository.deleteById(bid);
 		
 	}
